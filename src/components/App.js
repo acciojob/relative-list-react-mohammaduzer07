@@ -15,7 +15,7 @@ const App = () => {
 
       <input type='text' onChange={(e) => setName(e.target.value)}/>
       <button onClick={handleChange}>Submit</button>
-      <ol key={'relativeList'}>
+      <ol id='relativeList' key={'relativeList'}>
         {
           list.map((element, idx) =>{
             return <li key={`relativeListitem${idx}`}>{element}</li>
