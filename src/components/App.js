@@ -15,10 +15,10 @@ const App = () => {
 
       <input type='text' onChange={(e) => setName(e.target.value)}/>
       <button onClick={handleChange}>Name List</button>
-      <ol key={'relativeList'}>
+      <ol id={'relativeList'}>
         {
           list.map((element, idx) =>{
-            return <li key={`relativeListitem${idx}`}>{element}</li>
+            return <li id={`relativeListitem${idx}`}>{element}</li>
           })
         }
       </ol>
