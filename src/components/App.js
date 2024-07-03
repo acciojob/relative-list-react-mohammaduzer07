@@ -18,7 +18,7 @@ const App = () => {
       <ol id='relativeList' key={'relativeList'}>
         {
           list.map((element, idx) =>{
-            return <li key={`relativeListItem${idx}`}>{element}</li>
+            return <li id={`relativeListItem${idx}`}>{element}</li>
           })
         }
       </ol>
