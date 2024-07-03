@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const App = () => {
 
   const [name, setName] = useState("");
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(["Relative 1", "Relative 2"]);
 
   const handleChange = () =>{
     console.log(name);
@@ -18,7 +18,7 @@ const App = () => {
       <ol id='relativeList' key={'relativeList'}>
         {
           list.map((element, idx) =>{
-            return <li key={`relativeListitem${idx}`}>{element}</li>
+            return <li key={`relativeListItem${idx}`}>{element}</li>
           })
         }
       </ol>
